@@ -34,6 +34,36 @@ Traditional navigation systems focus mainly on shortest distance and travel time
 - Voice Navigation
 - Dark Mode Support
 
+## Publication
+
+**Research Paper Title:**
+Risk-Aware Smart Navigation System for Shortest and Safest Path Detection
+
+**Author:**
+Yaswanth Kiran Gorle
+
+**Journal:**
+International Journal of Creative and Open Research in Engineering and Management (IJCOPE)
+
+**ISSN:**
+3108-1754
+
+**Volume & Issue:**
+Volume 02, Issue 09, September 2026
+
+**DOI:**
+10.55041/ijcope.v2i9.072
+
+**Publication Date:**
+10 September 2026
+
+**Publication Status:**
+Peer-Reviewed and Published
+
+## Citation
+
+Gorle, Y. K. (2026). *Risk-Aware Smart Navigation System for Shortest and Safest Path Detection*. International Journal of Creative and Open Research in Engineering and Management (IJCOPE), Vol. 02, Issue 09. DOI: 10.55041/ijcope.v2i9.072
+
 ## Project Structure
 - app.py
 - requirements.txt
