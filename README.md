@@ -48,3 +48,22 @@ See the file:
 GORLE YASWANTH KIRAN
 Master of Computer Applications
 Andhra University
+
+
+
+## Screenshots
+
+### Landing Page
+![Landing Page](screenshots(139)/landing.png)
+
+### Navigation Interface
+![Navigation Interface](screenshots(141)/navigation.png)
+
+### Shortest Path
+![Shortest Path](screenshots(142)/shortest-path.png)
+
+### Safest Path
+![Safest Path](screenshots144)/safest-path.png)
+
+### Emergency Mode
+![Emergency Mode](screenshots(145)/emergency-mode.png)
