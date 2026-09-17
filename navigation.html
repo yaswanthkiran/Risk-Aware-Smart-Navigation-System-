@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Risk-Aware Smart Navigation System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.20.0/maps/maps.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.20.0/maps/maps-web.min.js"></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        Risk-Aware Smart Navigation System
+
+        <button class="dark-toggle-btn" onclick="toggleMapDarkMode()" aria-label="Toggle dark mode map">
+            <span class="ios-toggle" id="ios-switch">
+                <span class="ios-thumb"></span>
+            </span>
+            <i class="ti ti-moon" id="mode-icon"></i>
+            <span id="toggle-label">Dark mode</span>
+        </button>
+    </header>
+
+    <div class="main-container">
+        <div class="control-panel">
+            <h2>Navigation</h2>
+
+            <div class="route-row">
+                <div class="route-inputs">
+                    <select id="start">
+                        <option value="">Select Start Location</option>
+                    </select>
+                    <select id="end">
+                        <option value="">Select Destination</option>
+                    </select>
+
+                    <button class="btn emergency-btn" onclick="activateEmergencyMode()">🚨 Emergency Mode</button>
+                    <button class="btn blue" onclick="shortestPath()">Shortest Path</button>
+                    <button class="btn green" onclick="safestPath()">Safest Path</button>
+                    <button class="btn maps-btn" onclick="openGoogleMaps()">Open in Google Maps</button>
+                    <button class="btn red" onclick="resetFields()">Reset</button>
+                    <button class="btn blue" onclick="toggleVoice()" id="voiceBtn">🔊 Voice On</button>
+                </div>
+                <div class="info-box">
+                    <h3>Route Details</h3>
+                    <p>Path: <span id="path">--</span></p>
+                    <p>Distance: <span id="distance">--</span></p>
+                    <p>Time: <span id="time">--</span></p>
+                </div>
+            </div>
+            <div class="risk-bar-track">
+                <div id="riskBar" class="risk-bar-fill"></div>
+            </div>
+        </div>
+        <div class="map-section">
+            <div class="top-info-bar">
+                <div>🚨 <span id="accident">No accident reported</span></div>
+                <div>🚦 Traffic: <span id="traffic">Moderate</span></div>
+                <div>⚠ Risk: <span id="riskText">LOW (0%)</span></div>
+                <div class="weather-top" onclick="toggleWeather()">
+                    🌤 Weather: <span id="condition">--</span> ⏷
+                    <div id="weatherContent" class="weather-dropdown">
+                        <img id="weatherIcon" src="images/clear.png" width="50" alt="weather">
+                        <p>Temperature: <span id="temp">--</span></p>
+                        <p>Humidity: <span id="humidity">--</span></p>
+                        <p>Wind: <span id="wind">--</span></p>
+                        <p>Pressure: <span id="pressure">--</span></p>
+                    </div>
+                </div>
+                <div>📅 <span id="currentDate">--</span></div>
+                <div>⏰ <span id="currentTime">--</span></div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
